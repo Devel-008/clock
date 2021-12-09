@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js"></script>
+    <title>CLOCK</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="grid-container1">
+            <div class="grid-item" id="clock-pic">
+
+            </div>
+            <div class="grid-item" id="left-second-container">
+                <div class="left-second-container-inner">
+                    <div id="know"><i class="fas fa-sun"></i></div>
+                    <div class="left-second-container-option">
+                        <label style="font-size:20px; color: purple;">Set Wake Up Time </label>
+                        <select id="wake" style="margin-left: 30px; color: purple;">
+                                <option value="0">Default</option>
+                                <option value="1">1AM-2AM</option>
+                                <option value="2">2AM-3AM</option>
+                                <option value="3">3AM-4AM</option>
+                                <option value="4">4AM-5AM</option>
+                                <option value="5">5AM-6AM</option>
+                                <option value="6">6AM-7AM</option>
+                                <option value="7">7AM-8AM</option>
+                                <option value="8">8AM-9AM</option>
+                                <option value="9">9AM-10AM</option>
+                                <option value="10">10AM-11AM</option>
+                                <option value="11">11AM-12PM</option>
+                                <option value="12">12PM-1PM</option>
+                                <option value="13">1PM-2PM</option>
+                                <option value="14">2PM-3PM</option>
+                                <option value="15">3PM-4PM</option>
+                                <option value="16">4PM-5PM</option>
+                                <option value="17">5PM-6PM</option>
+                                <option value="18">6PM-7PM</option>
+                                <option value="19">7PM-8PM</option>
+                                <option value="20">8PM-9PM</option>
+                                <option value="21">9PM-10PM</option>
+                                <option value="22">10PM-11PM</option>
+                          -     <option value="23">11PM-12AM</option>
+                                <option value="24">12AM-1AM</option>                      
+                            </select>
+                    </div>
+
+
+                </div>
+                <div class="left-second-container-inner">
+                    <div id="know1"><i class="fas fa-utensils"></i></div>
+                    <div class="left-second-container-option">
+                        <label style="font-size:20px; color: purple;">Set Lunch Time </label>
+                        <select id="wake1" style="margin-left: 60px; color: purple;">
+                            <option value="0">Default</option>
+                            <option value="1">1AM-2AM</option>
+                            <option value="2">2AM-3AM</option>
+                            <option value="3">3AM-4AM</option>
+                            <option value="4">4AM-5AM</option>
+                            <option value="5">5AM-6AM</option>
+                            <option value="6">6AM-7AM</option>
+                            <option value="7">7AM-8AM</option>
+                            <option value="8">8AM-9AM</option>
+                            <option value="9">9AM-10AM</option>
+                            <option value="10">10AM-11AM</option>
+                            <option value="11">11AM-12PM</option>
+                            <option value="12">12PM-1PM</option>
+                            <option value="13">1PM-2PM</option>
+                            <option value="14">2PM-3PM</option>
+                            <option value="15">3PM-4PM</option>
+                            <option value="16">4PM-5PM</option>
+                            <option value="17">5PM-6PM</option>
+                            <option value="18">6PM-7PM</option>
+                            <option value="19">7PM-8PM</option>
+                            <option value="20">8PM-9PM</option>
+                            <option value="21">9PM-10PM</option>
+                            <option value="22">10PM-11PM</option>
+                      -     <option value="23">11PM-12AM</option>
+                            <option value="24">12AM-1AM</option>  
+                            </select>
+                    </div>
+
+
+                </div>
+                <div class="left-second-container-inner">
+                    <div id="know2"><i class="fas fa-cloud-moon"></i></div>
+                    <div class="left-second-container-option">
+                        <label style="font-size:20px; color: purple;">Set Nap Time </label>
+                        <select id="wake2" style="margin-left: 70px; color: purple;">
+                            <option value="0">Default</option>
+                            <option value="1">1AM-2AM</option>
+                            <option value="2">2AM-3AM</option>
+                            <option value="3">3AM-4AM</option>
+                            <option value="4">4AM-5AM</option>
+                            <option value="5">5AM-6AM</option>
+                            <option value="6">6AM-7AM</option>
+                            <option value="7">7AM-8AM</option>
+                            <option value="8">8AM-9AM</option>
+                            <option value="9">9AM-10AM</option>
+                            <option value="10">10AM-11AM</option>
+                            <option value="11">11AM-12PM</option>
+                            <option value="12">12PM-1PM</option>
+                            <option value="13">1PM-2PM</option>
+                            <option value="14">2PM-3PM</option>
+                            <option value="15">3PM-4PM</option>
+                            <option value="16">4PM-5PM</option>
+                            <option value="17">5PM-6PM</option>
+                            <option value="18">6PM-7PM</option>
+                            <option value="19">7PM-8PM</option>
+                            <option value="20">8PM-9PM</option>
+                            <option value="21">9PM-10PM</option>
+                            <option value="22">10PM-11PM</option>
+                      -     <option value="23">11PM-12AM</option>
+                            <option value="24">12AM-1AM</option>  
+                            </select>
+                    </div>
+
+
+                </div>
+            </div>
+            <button class="grid-item" id="set-time" onclick="settime()">
+                SET TIME
+            </button>
+        </div>
+        <div class="grid-container2">
+            <div class="grid-item1" id="digital-clock">
+                <div id="clock">
+                    <h2>Time</h2>
+                </div>
+                <div id="clock1">
+                    <span id="hrs">00</span>
+                    <p>hrs</p>
+                </div>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <div id="circle"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="circle1"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="clock2">
+                    <span id="min">00</span>
+                    <p>min</p>
+                </div>
+
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <div id="circle"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="circle1"></div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div id="clock3">
+                    <span id="sec">00</span>
+                    <p>sec</p>
+                </div>
+                <div id="clock4">
+                    <span id="ams">
+                        <h2>AM</h2>
+                    </span>
+                </div>
+                <div id="ltime"></div>
+                <div id="l1time"></div>
+            </div>
+
+            <div class="grid-item1" id="right-bottom-container">
+                <div id="lunch">Hi Everyone!</div>
+                <div id="divdend"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
